@@ -35,7 +35,7 @@ export default class BugPage extends React.Component {
     componentDidMount() {
         this.fetchData();
 
-        setTimeout(()=>{
+        if (!__DEV__) setTimeout(()=>{
             alert("Application is not freezed!");
         },3000);
     }
